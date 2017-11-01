@@ -1,0 +1,100 @@
+get the number of total sector on a disk?
+
+tsector=sectors*heads*cylinders
+
+or 
+
+tsector=bytes/512
+
+______________________________
+
+get the number of bytes on a disk?
+
+
+bytes per sector normaly =512
+
+so
+bytes=512*sectors*heads*cylinders
+
+1 kbytes=1024 bytes
+1 Mbytes=1024*1024
+
+______________________________
+
+get the x of a disk the x of a disk is the cylindrs?
+the heads cilinders and sectrors track came in the disk label paper
+if you want to simulate it 
+
+
+like this
+max sectors=63
+max heads=255
+max cylindrs=1023
+
+-------------------
+sample for  a 34 Mb disk?
+
+sectors=63
+heads=255
+
+xx=sectors*heads=16065
+
+bytes=35'651'584=34*1024*1024
+tsectors=35'651'584/512=69'632
+tsectors=tsectors-1
+cylinders=tsectors/xx=4
+
+4 cilinders 
+x=4
+
+-------------------
+sample for  a 120 Mb disk?
+
+sectors=63
+heads=255
+
+xx=sectors*heads=16065
+
+bytes=125'829'120=120*1024*1024
+tsectors=125'829'120/512=245'760
+tsectors=tsectors-1
+cylinders=tsectors/xx=15
+
+15 cilinders 
+x=15
+
+-------------------
+sample for  a 500 Mb disk?
+
+sectors=63
+heads=255
+
+xx=sectors*heads=16065
+
+bytes=524'288'000=500*1024*1024
+tsectors=524'288'000/512=1'024'000
+tsectors=tsectors-1
+cylinders=tsectors/xx=63
+
+63 cilinders 
+x=63
+
+
+____________________
+
+if the geometry of a disk is more  than 
+8'414'461'440 bytes
+
+you must add in the 'bytes per sector value'
+so to 512>1024>2048>4096>8192>16384>32768
+
+mtsectors=63*255*1023=16'434'495 sectors
+mtsectors*512=8'414'461'440
+
+
+
+16434495
+
+
+
+
