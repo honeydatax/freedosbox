@@ -1,0 +1,72 @@
+rem rem coment line
+"rem same text'
+
+rem cd change into a other directory
+cd games
+
+rem cd change into back dir
+cd ..
+
+rem dir list all files in the directory
+"dir"
+
+rem dir list all .exe files in the directory
+"dir *.exe"
+
+rem mkdir creat new directory
+"mkdir games"
+
+rem del deletes a file
+"del game.txt"
+
+
+rem erase delete a file
+"erase game.txt"
+
+rem deltree erase a directory
+"deltree games"
+
+rem copy copys a file
+" copy game.txt c:\games"
+
+rem copy copys all files
+" copy *.* c:\games"
+
+rem copy copys all .exe files
+" copy *.exe c:\games"
+
+rem cls clear screen
+"cls"
+
+rem mem display free ram memory
+"mem"
+
+rem fdisk creats a disk partiation and activetes c drive for start up
+"fdisk"
+
+rem format erases and clears a disk for start write and read from it
+format c:
+
+rem sys copy a start up bootable drive into other drive
+sys a: c
+
+rem xcopy copys all directory from a floppy into the hard disk
+xcopy /h /e a:\dos c:\freedos
+
+rem > write into a file
+echo hello world > out.txt
+
+rem < read keys from a file into stand input
+debug < input.txt > out.txt
+
+rem debug write a com file
+debug
+
+rem gem start gdi
+gem
+
+rem seal start gdi
+seal
+
+
+
