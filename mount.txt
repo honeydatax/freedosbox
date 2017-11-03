@@ -1,0 +1,24 @@
+rem *unmount drive on dosbox
+"mount -u c"
+
+rem *mount drive d disk images on dosbox
+"mount d /sdcard/images"
+"d:"
+
+
+rem *mount a floppy disk
+" imgmount a floppy.img -size 512,18,2,80 -t floppy  -fs none"
+
+rem *mount a disk image on c drive
+"imgmount c freedos.img -size 512,63,255,4"
+
+
+rem *mount a start up drive on c drive 2 and boot it from
+"imgmount 2 i1.img -size 512,63,255,4 -t hdd -fs none"
+" boot -l c"
+
+rem *mount cdrom
+imgmount x freedos.iso -t iso
+
+rem *boot a floppy disk 
+" boot floppy.img "
