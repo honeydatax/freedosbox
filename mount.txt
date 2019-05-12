@@ -7,7 +7,7 @@ rem *mount drive d disk images on dosbox
 
 
 rem *mount a floppy disk
-" imgmount a floppy.img -size 512,18,2,80 -t floppy  -fs none"
+" imgmount a floppy.img -size 512,80,18,2 -t floppy  -fs none"
 
 rem *mount a disk image on c drive
 "imgmount c freedos.img -size 512,63,255,4"
